@@ -1,0 +1,64 @@
+@keyframes rotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.bohr{
+    position: relative;
+    margin-top: 5rem;
+}
+
+.bohr__nucleus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    color: var(--mainAccent);
+    text-align: center;
+
+    width: 10vw;
+    aspect-ratio: 1/1;
+    background: var(--mainRadial);
+    border-radius: 50%;
+    box-shadow: var(--glow);
+}
+
+.orbit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50%;
+
+    transform: translate(50%, 50%);
+    aspect-ratio: 1/1;
+}
+
+.orbit-1{
+    width: 15vw;
+    animation: rotate 20s linear infinite;
+}
+
+.orbit-2{
+    width: 20vw;
+    animation: rotate 28s linear infinite reverse;
+}
+
+.orbit-3{
+    width: 25vw;
+    animation: rotate 35s linear infinite;
+}
+
+.electron{
+    position: absolute;
+    left: 63.5%;
+
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #60a5fa;
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem rgba(96, 165, 250, 0.8);
+}

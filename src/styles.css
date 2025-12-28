@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'modern-normalize/modern-normalize.css';
+
+:root{
+    --mainColor: rgb(14, 20, 37);
+    --mainAccent: #fff;
+    
+    --mainLinear: linear-gradient(135deg, #0a1929 0%, #1a2332 50%, #0d1b2a 100%);
+    --mainRadial: radial-gradient(circle, #3b82f6, #1e40af);
+    --glow: 0 0 4rem rgba(59, 130, 246, 0.6);
+    
+    --titlesFont: "Quantico";
+}
+
+/* Sets rem sizing to 10px*/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+/* Global Tag Overrides */
+
+body{
+    background: var(--mainLinear);
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    font-family: var(--titlesFont);
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
