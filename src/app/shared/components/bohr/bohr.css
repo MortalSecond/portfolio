@@ -5,6 +5,7 @@
 
 .bohr{
     position: relative;
+    z-index: -1;
     margin-top: 5rem;
 }
 

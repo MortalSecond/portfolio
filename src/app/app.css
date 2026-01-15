@@ -8,3 +8,11 @@
 
     padding: 10rem;
 }
+
+.hero h2{
+    color: var(--mainAccent);
+}
+
+.hero h4{
+    color: var(--secondaryAccent);
+}
